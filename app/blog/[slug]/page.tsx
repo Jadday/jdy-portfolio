@@ -9,7 +9,7 @@ type PageProps = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export default async function BlogPostPage({ params, searchParams: _searchParams }: PageProps): Promise<JSX.Element> {
+export default async function BlogPostPage({ params, searchParams }: PageProps): Promise<JSX.Element> {
   if (!params.slug) {
     notFound();
   }
