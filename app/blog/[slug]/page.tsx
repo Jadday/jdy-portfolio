@@ -1,12 +1,7 @@
 // app/blog/[slug]/page.tsx
 import { notFound } from 'next/navigation';
 
-type Params = {
-  params: { slug: string }
-};
-
-export default function BlogPostPage({ params }: Params) {
-  // For now, display the slug; later, fetch post content based on slug.
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
   if (!params.slug) {
     notFound();
   }
