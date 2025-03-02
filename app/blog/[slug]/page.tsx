@@ -5,10 +5,11 @@ import { JSX } from 'react';
 type PageProps = {
   params: {
     slug: string;
-  }
+  };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export default async function BlogPostPage({ params }: PageProps): Promise<JSX.Element> {
+export default async function BlogPostPage({ params, searchParams }: PageProps): Promise<JSX.Element> {
   if (!params.slug) {
     notFound();
   }
