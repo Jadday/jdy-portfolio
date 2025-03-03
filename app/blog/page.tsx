@@ -1,4 +1,8 @@
 // app/blog/page.tsx
+export const metadata = {
+  title: 'Blog | James Daw',
+};
+
 export default function BlogPage() {
     return (
       <div>

@@ -1,4 +1,8 @@
 // app/page.tsx
+export const metadata = {
+  title: 'Home | James Daw',
+};
+
 export default function HomePage() {
   return (
     <div>

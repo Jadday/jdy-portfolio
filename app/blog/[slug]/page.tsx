@@ -1,11 +1,13 @@
-"use client"
-import React from 'react';
-
 interface PageProps {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
-export default function Page({ params }: PageProps) {
-  const resolvedParams = React.use(params);
-  return <p>Post: {resolvedParams.slug}</p>;
+export async function generateMetadata({ params }: PageProps) {
+  return {
+    title: params.slug + " | James Daw", // Sets the title dynamically based on the slug.
+  };
+}
+
+export default async function Page({ params }: PageProps) {
+  return <p>Post: {params.slug}</p>;
 }
