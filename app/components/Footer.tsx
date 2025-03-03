@@ -1,9 +1,9 @@
-// app/components/Footer.tsx
 export default function Footer() {
-    return (
-      <footer className="bg-gray-800 text-white p-4 text-center">
-        © {new Date().getFullYear()} My Portfolio. All rights reserved.
-      </footer>
-    );
-  }
-  
+  return (
+    <footer className="bg-[#1b1f24] text-white py-6 text-center border-t border-[#30363d] text-sm">
+      <p className="tracking-wide">
+        © {new Date().getFullYear()} <span className="text-terminalRed">James Daw</span>. All rights reserved.
+      </p>
+    </footer>
+  );
+}

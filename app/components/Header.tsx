@@ -1,16 +1,20 @@
-// app/components/Header.tsx
 import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <nav className="container mx-auto flex justify-between">
-        <Link href="/" className="font-bold">MyPortfolio</Link>
-        <div className="space-x-4">
-          <Link href="/about">About</Link>
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/contact">Contact</Link>
+    <header className="bg-[#1b1f24] text-white p-4 border-b border-[#30363d]">
+      <nav className="container mx-auto flex justify-between items-center">
+        {/* Logo / Name */}
+        <Link href="/" className="text-xl font-bold text-terminalRed tracking-wide nav-link">
+          James Daw
+        </Link>
+
+        {/* Navigation Links */}
+        <div className="space-x-6 text-lg">
+          <Link href="/about" className="nav-link">About</Link>
+          <Link href="/portfolio" className="nav-link">Portfolio</Link>
+          <Link href="/blog" className="nav-link">Blog</Link>
+          <Link href="/contact" className="nav-link">Contact</Link>
         </div>
       </nav>
     </header>
