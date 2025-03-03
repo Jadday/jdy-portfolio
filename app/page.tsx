@@ -9,13 +9,13 @@ export default function Home() {
       <section className="mb-10">
         <h1 className="text-4xl font-bold text-terminalGold">James Daw</h1>
         <p className="mt-4 text-lg">
-          Hey, I'm <span className="text-terminalRed font-bold">JDY</span>. I build things.
+          Hey, I&apos;m <span className="text-terminalRed font-bold">JDY</span>. I build things.
         </p>
         <p className="mt-2 text-lg">
           From <span className="text-terminalRed">cybersecurity</span> to{" "}
           <span className="text-terminalRed">AI projects</span>, I enjoy exploring
           how technology works and bending it to my will. This site is a collection
-          of things I've worked on.
+          of things I&apos;ve worked on.
         </p>
       </section>
 
