@@ -1,2 +1,2 @@
-# jdy-portfolio
-Portfolio website and blog by James Daw.
+# Personal Portfolio
+This repo contains the site for my personal portfolio and blog.
