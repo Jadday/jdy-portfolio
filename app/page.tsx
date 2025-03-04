@@ -18,7 +18,7 @@ export default function Home() {
           Whenever I find free time, I love to make things. Whether it&apos;s {" "}
           <Link href="/" className="text-terminalRed body-link">cybersecurity tools</Link>, <Link href="/" className="text-terminalRed body-link">AI Projects</Link>,{" "}
           <Link href="/" className="text-terminalRed body-link">games</Link>, <Link href="/" className="text-terminalRed body-link">music</Link>, or anything else, I always
-          have new ideas that I can't wait to bring to life.
+          have new ideas that I can&apos;t wait to bring to life.
         </p>
         <p className="mt-4 text-lg">
           I also like to <Link href="/" className="text-terminalRed body-link">break things</Link>, if I&apos;m feeling mischievous (and if I have permission, obviously).
