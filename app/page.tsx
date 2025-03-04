@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const metadata = {
   title: 'Home | James Daw',
 };
@@ -14,12 +16,12 @@ export default function Home() {
         </p>
         <p className="mt-4 text-lg">
           Whenever I find free time, I love to make things. Whether it&apos;s {" "}
-          <a href="/" className="text-terminalRed body-link">cybersecurity tools</a>, <a href="/" className="text-terminalRed body-link">AI Projects</a>,{" "}
-          <a href="/" className="text-terminalRed body-link">games</a>, <a href="/" className="text-terminalRed body-link">music</a>, or anything else, I always
+          <Link href="/" className="text-terminalRed body-link">cybersecurity tools</Link>, <Link href="/" className="text-terminalRed body-link">AI Projects</Link>,{" "}
+          <Link href="/" className="text-terminalRed body-link">games</Link>, <Link href="/" className="text-terminalRed body-link">music</Link>, or anything else, I always
           have new ideas that I can't wait to bring to life.
         </p>
         <p className="mt-4 text-lg">
-          I also like to <a href="/" className="text-terminalRed body-link">break things</a>, if I&apos;m feeling mischievous (and if I have permission, obviously).
+          I also like to <Link href="/" className="text-terminalRed body-link">break things</Link>, if I&apos;m feeling mischievous (and if I have permission, obviously).
         </p>
       </section>
 
@@ -36,9 +38,9 @@ export default function Home() {
               Impact, and Fortnite. Features <strong>true 3D exploration, state-based
               combat, and custom movement mechanics</strong>.
             </p>
-            <a href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
+            <Link href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
               [ Learn More ]
-            </a>
+            </Link>
           </li>
 
           {/* Project 2 */}
@@ -48,9 +50,9 @@ export default function Home() {
               Uses <strong>Spotify API & LLMs</strong> to generate <strong>custom playlists based on
               mood, genre, or existing tracks</strong>. Built with LangChain & Spotipy.
             </p>
-            <a href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
+            <Link href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
               [ GitHub Repo ]
-            </a>
+            </Link>
           </li>
 
           {/* Project 3 */}
@@ -61,9 +63,9 @@ export default function Home() {
               <strong> ethical hacking & Red Team engagements</strong>. Gathers <strong>OSINT &
               maps attack surfaces</strong>.
             </p>
-            <a href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
+            <Link href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
               [ Coming Soon ]
-            </a>
+            </Link>
           </li>
         </ul>
       </section>

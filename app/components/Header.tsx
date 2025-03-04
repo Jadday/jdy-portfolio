@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   return (
@@ -15,7 +16,7 @@ export default function Header() {
           <Link href="/portfolio" className="nav-link">Projects</Link>
           <Link href="/blog" className="nav-link">Blog</Link>
           <Link href="/">
-            <img src="/navbar-icon3.png" alt="Description" width={40} height={40} className="navbar-icon-glow" />
+            <Image src="/navbar-icon3.png" alt="Description" width={40} height={40} className="navbar-icon-glow" />
           </Link>
         </div>
       </nav>
