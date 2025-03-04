@@ -7,21 +7,25 @@ export default function Home() {
     <div className="container">
       {/* INTRODUCTION */}
       <section className="mb-10">
-        <h1 className="text-4xl font-bold text-terminalGold">James Daw</h1>
+        <h1 className="text-4xl font-bold">James Daw</h1>
         <p className="mt-4 text-lg">
-          Hey, I&apos;m <span className="text-terminalRed font-bold">JDY</span>. I build things.
+          Hey, I&apos;m <span className="font-bold">Jadday</span>, also known as{" "}
+          <span className="font-bold">JDY</span>.
         </p>
-        <p className="mt-2 text-lg">
-          From <span className="text-terminalRed">cybersecurity</span> to{" "}
-          <span className="text-terminalRed">AI projects</span>, I enjoy exploring
-          how technology works and bending it to my will. This site is a collection
-          of things I&apos;ve worked on.
+        <p className="mt-4 text-lg">
+          Whenever I find free time, I love to make things. Whether it&apos;s {" "}
+          <a href="/" className="text-terminalRed body-link">cybersecurity tools</a>, <a href="/" className="text-terminalRed body-link">AI Projects</a>,{" "}
+          <a href="/" className="text-terminalRed body-link">games</a>, <a href="/" className="text-terminalRed body-link">music</a>, or anything else, I always
+          have new ideas that I can't wait to bring to life.
+        </p>
+        <p className="mt-4 text-lg">
+          I also like to <a href="/" className="text-terminalRed body-link">break things</a>, if I&apos;m feeling mischievous (and if I have permission, obviously).
         </p>
       </section>
 
       {/* PORTFOLIO SECTION */}
       <section className="terminal-box">
-        <h2 className="text-3xl font-bold text-terminalRed mb-6">Projects</h2>
+        <h2 className="text-3xl font-bold mb-6">Projects</h2>
 
         <ul className="space-y-8">
           {/* Project 1 */}
@@ -32,7 +36,7 @@ export default function Home() {
               Impact, and Fortnite. Features <strong>true 3D exploration, state-based
               combat, and custom movement mechanics</strong>.
             </p>
-            <a href="#" className="text-terminalRed text-lg font-bold mt-2 inline-block">
+            <a href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
               [ Learn More ]
             </a>
           </li>
@@ -44,7 +48,7 @@ export default function Home() {
               Uses <strong>Spotify API & LLMs</strong> to generate <strong>custom playlists based on
               mood, genre, or existing tracks</strong>. Built with LangChain & Spotipy.
             </p>
-            <a href="#" className="text-terminalRed text-lg font-bold mt-2 inline-block">
+            <a href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
               [ GitHub Repo ]
             </a>
           </li>
@@ -57,7 +61,7 @@ export default function Home() {
               <strong> ethical hacking & Red Team engagements</strong>. Gathers <strong>OSINT &
               maps attack surfaces</strong>.
             </p>
-            <a href="#" className="text-terminalRed text-lg font-bold mt-2 inline-block">
+            <a href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
               [ Coming Soon ]
             </a>
           </li>

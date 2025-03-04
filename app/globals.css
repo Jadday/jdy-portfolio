@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --font-mono: "Lucida Console", Monaco, monospace;
+  --font-mono: 'JetBrains Mono', monospace;
   --background: #0c0d10;
-  --foreground: #FEFEFE;
-  --highlight: #d10000;
+  --foreground: #dadada;
+  --highlight: #ffffff;
+  --link: #d10000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0c0d10;
-    --foreground: #FEFEFE;
-    --highlight: #d10000;
+    --foreground: #dadada;
+    --highlight: #ffffff;
+    --link: #d10000;
   }
 }
 
@@ -70,22 +72,35 @@ a:hover {
   transition: color 0.2s ease-in-out;
 }
 
+.body-link {
+  color: var(--link);
+  transition: color 0.2s ease-in-out;
+}
+
 .nav-link:hover {
+  color: black;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.body-link:hover {
   color: white;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
 }
 
 h1 {
+  color: #FFFFFF;
   font-size: 3rem;
   margin-bottom: 10px;
 }
 
 h2 {
+  color: #FFFFFF;
   font-size: 1.75rem;
   margin-bottom: 8px;
 }
 
 h3 {
+  color: #FFFFFF;
   font-size: 1.5rem;
 }
 
@@ -101,3 +116,11 @@ p {
   margin: 30px 0;
 }
 
+.font-bold {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-icon-glow {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+}

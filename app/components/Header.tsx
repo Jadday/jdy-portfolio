@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-[#1b1f24] text-white p-4 border-b border-[#30363d]">
+    <header className="bg-[#800303] text-white p-4 border-b border-[#30363d]">
       <nav className="container mx-auto flex justify-between items-center">
         {/* Logo / Name */}
         <Link href="/" className="text-xl font-bold text-terminalRed tracking-wide nav-link">
@@ -14,7 +14,9 @@ export default function Header() {
           <Link href="/about" className="nav-link">About</Link>
           <Link href="/portfolio" className="nav-link">Projects</Link>
           <Link href="/blog" className="nav-link">Blog</Link>
-          <img src="/navbar-icon.png" alt="Description" width={40} height={40} />
+          <Link href="/">
+            <img src="/navbar-icon3.png" alt="Description" width={40} height={40} className="navbar-icon-glow" />
+          </Link>
         </div>
       </nav>
     </header>
