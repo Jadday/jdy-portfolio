@@ -10,11 +10,11 @@ export default function Header() {
         </Link>
 
         {/* Navigation Links */}
-        <div className="space-x-6 text-lg">
+        <div className="space-x-6 text-lg flex items-center">
           <Link href="/about" className="nav-link">About</Link>
-          <Link href="/portfolio" className="nav-link">Portfolio</Link>
+          <Link href="/portfolio" className="nav-link">Projects</Link>
           <Link href="/blog" className="nav-link">Blog</Link>
-          <Link href="/contact" className="nav-link">Contact</Link>
+          <img src="/navbar-icon.png" alt="Description" width={40} height={40} />
         </div>
       </nav>
     </header>
