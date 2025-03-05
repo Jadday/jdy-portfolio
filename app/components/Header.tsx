@@ -52,7 +52,7 @@ export default function Header() {
           </Link>
           <Link href="/">
             <Image
-              src="/navbar-icon3.png"
+              src="/navbar-icon-dark.png"
               alt="Description"
               width={40}
               height={40}
