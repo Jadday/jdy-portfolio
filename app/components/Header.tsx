@@ -44,7 +44,7 @@ export default function Header() {
           <Link href="/about" className="nav-link">
             About
           </Link>
-          <Link href="/portfolio" className="nav-link">
+          <Link href="/projects" className="nav-link">
             Projects
           </Link>
           <Link href="/blog" className="nav-link">
@@ -73,7 +73,7 @@ export default function Header() {
             About
           </Link>
           <Link
-            href="/portfolio"
+            href="/projects"
             className="block nav-link"
             onClick={() => setMobileNavOpen(false)}
           >
