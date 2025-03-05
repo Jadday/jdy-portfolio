@@ -25,7 +25,7 @@ export default function AboutPage() {
         work in any of them.        
         </p>
         <p className="mt-4 text-lg">
-        There&apos;s a chance it isn&apos;t possible. <strong>But if it is, I&apos;m determined to be the one to do it.</strong>        
+        There&apos;s a chance it isn&apos;t possible. <strong>But if it is, I&apos;m determined to do it.</strong>        
         </p>
       </section>
 
@@ -33,18 +33,21 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold mb-4">Experience</h2>
         <p className="mt-4 text-lg">
         I&apos;m currently in the 3rd year of a <Link href="/" className="text-terminalRed body-link">degree apprenticeship</Link>, 
-        working full-time in the Cyber Security team at JLR, while studying towards a BSc in Digital Technology Solutions 
-        (Cyber Security) at Warwick University.
+        working full-time in the Cyber Security team at <strong>JLR</strong>, while studying towards a BSc in Digital Technology Solutions 
+        (Cyber Security) at <strong>Warwick University</strong>.
         </p>
       </section>
 
       <section className="mb-10">
         <h2 className="text-3xl font-bold mb-4">Skills</h2>
+        <p className="mt-4 text-lg">
+          I&apos;ve become familiar with several technologies in my journey so far, such as:
+        </p>
         <div className="flex flex-col md:flex-row md:space-x-10 justify-center">
           <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
             <div className="flex flex-col md:flex-row md:space-x-10">
               <div className="md:w-1/2">
-                <h3 className="text-2xl mt-4">Languages:</h3>
+                <h3 className="text-2xl mt-4">Languages</h3>
                 <ul className="list-disc list-inside text-lg">
                   <li>Python</li>
                   <li>C# and C++</li>
@@ -54,7 +57,7 @@ export default function AboutPage() {
                 </ul>
               </div>
               <div className="md:w-1/2">
-                <h3 className="text-2xl mt-4">Software:</h3>
+                <h3 className="text-2xl mt-4">Software</h3>
                 <ul className="list-disc list-inside text-lg">
                   <li>Kali Linux</li>
                   <li>Unity</li>
@@ -66,6 +69,11 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+        <p className="mt-4 text-lg">
+        I also have a set of soft skills that allow me to follow this path effectively. I&apos;m someone who is incredibly dedicated 
+        to subjects I enjoy, so with the right motivation, I can easily spend hours studying and experimenting. I learn new skills quickly, 
+        and I have a good intuition for situations I&apos;ve never seen before.
+        </p>
       </section>
 
       <section className="mb-10">
