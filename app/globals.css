@@ -15,7 +15,7 @@
     --background: #0c0d10;
     --foreground: #dadada;
     --highlight: #ffffff;
-    --link: #d10000;
+    --link: #ff0101;
   }
 }
 
@@ -75,7 +75,7 @@ h2 {
 
 h3 {
   color: #FFFFFF;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
@@ -136,4 +136,22 @@ p {
 
 .navbar-icon-glow {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 150px; /* Adjust the max-width as needed */
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .responsive-image {
+    max-width: 200px; /* Adjust the max-width for medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .responsive-image {
+    max-width: 220px; /* Adjust the max-width for large screens */
+  }
 }
