@@ -18,56 +18,42 @@ export default function Home() {
           Whenever I find free time, I love to make things. Whether it&apos;s {" "}
           <Link href="/" className="text-terminalRed body-link">cybersecurity tools</Link>, <Link href="/" className="text-terminalRed body-link">AI Projects</Link>,{" "}
           <Link href="/" className="text-terminalRed body-link">games</Link>, <Link href="/" className="text-terminalRed body-link">music</Link>, or anything else, I always
-          have new ideas that I can&apos;t wait to bring to life.
+          have new ideas that I can&apos;t wait to bring to life. I also like to <Link href="/" className="text-terminalRed body-link">break things</Link>, if I&apos;m feeling mischievous (and if I have permission, obviously).
         </p>
         <p className="mt-4 text-lg">
-          I also like to <Link href="/" className="text-terminalRed body-link">break things</Link>, if I&apos;m feeling mischievous (and if I have permission, obviously).
+          This website is my way of sharing that portfolio with the world. Enjoy your stay :)
         </p>
+
       </section>
 
-      {/* PORTFOLIO SECTION */}
       <section className="terminal-box">
-        <h2 className="text-3xl font-bold mb-6">Projects</h2>
+        <h2 className="text-3xl font-bold mb-6">Learn About Me</h2>
+        <p className="text-lg">
+          Take a look at my experience, skills, certifications and more.
+        </p>
+        <Link href="/about" className="text-terminalRed body-link text-lg mt-2 inline-block">
+            [ About Me ]
+         </Link>
+      </section>
 
-        <ul className="space-y-8">
-          {/* Project 1 */}
-          <li>
-            <h3 className="text-2xl font-bold text-terminalRed">Beacons (Unity Game)</h3>
-            <p className="mt-2 text-lg">
-              A 3D open-world platform fighter inspired by Smash Bros, Genshin
-              Impact, and Fortnite. Features <strong>true 3D exploration, state-based
-              combat, and custom movement mechanics</strong>.
-            </p>
-            <Link href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
-              [ Learn More ]
-            </Link>
-          </li>
+      <section className="terminal-box">
+        <h2 className="text-3xl font-bold mb-6">My Projects</h2>
+        <p className="text-lg">
+          Try out the projects I&apos;ve worked on, from games to security tools.
+        </p>
+        <Link href="/projects" className="text-terminalRed body-link text-lg mt-2 inline-block">
+            [ My Projects ]
+         </Link>
+      </section>
 
-          {/* Project 2 */}
-          <li>
-            <h3 className="text-2xl font-bold text-terminalRed">AI-Powered Playlist Generator</h3>
-            <p className="mt-2 text-lg">
-              Uses <strong>Spotify API & LLMs</strong> to generate <strong>custom playlists based on
-              mood, genre, or existing tracks</strong>. Built with LangChain & Spotipy.
-            </p>
-            <Link href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
-              [ GitHub Repo ]
-            </Link>
-          </li>
-
-          {/* Project 3 */}
-          <li>
-            <h3 className="text-2xl font-bold text-terminalRed">Cybersecurity Recon Tool</h3>
-            <p className="mt-2 text-lg">
-              A <strong>Python-based network reconnaissance tool</strong> designed for
-              <strong> ethical hacking & Red Team engagements</strong>. Gathers <strong>OSINT &
-              maps attack surfaces</strong>.
-            </p>
-            <Link href="#" className="text-terminalRed body-link text-lg mt-2 inline-block">
-              [ Coming Soon ]
-            </Link>
-          </li>
-        </ul>
+      <section className="terminal-box">
+        <h2 className="text-3xl font-bold mb-6">Read the Blog</h2>
+        <p className="text-lg">
+          Read articles about what I&apos;ve been up to lately.
+        </p>
+        <Link href="/blog" className="text-terminalRed body-link text-lg mt-2 inline-block">
+            [ Blog ]
+         </Link>
       </section>
     </div>
   );
