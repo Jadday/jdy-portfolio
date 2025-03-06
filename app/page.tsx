@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div className="container">
       {/* INTRODUCTION */}
-      <section className="mb-10">
+      <section className="mb-20 mt-10">
         <h1 className="text-4xl font-bold">James Daw</h1>
-        <p className="mt-4 text-lg">
+        <p className="mt-8 text-lg">
           Hey, I&apos;m <span className="font-bold">Jadday</span>, also known as{" "}
           <span className="font-bold">JDY</span>.
         </p>
