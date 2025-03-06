@@ -11,7 +11,8 @@ export default function AboutPage() {
     <div className="container mx-auto p-4">
       <section className="mb-10">
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
-        <Image src="/james-daw.jpg" alt="James Daw" width={150} height={150} className="responsive-image rounded-full mx-auto mb-6 mt-4" />        <p className="mt-4 text-lg">
+        <Image src="/james-daw.jpg" alt="James Daw" width={150} height={150} className="responsive-image rounded-full mx-auto mb-6 mt-4" />        
+        <p className="mt-4 text-lg">
         <strong>In the modern world,</strong> where technology makes almost anything possible,{" "} 
         <Link href="/" className="text-terminalRed body-link">self-improvement</Link> has reached a 
         new era. The potential for efficiently picking up new skills and excelling in them has never been higher.
@@ -35,6 +36,10 @@ export default function AboutPage() {
         I&apos;m currently in the 3rd year of a <Link href="/" className="text-terminalRed body-link">degree apprenticeship</Link>, 
         working full-time in the Cyber Security team at <strong>JLR</strong>, while studying towards a BSc in Digital Technology Solutions 
         (Cyber Security) at <strong>Warwick University</strong>.
+        </p>
+        <p className="mt-4 text-lg">
+          I recently completed the <Link href="https://www.sans.org/mlp/holiday-hack-challenge-2024/" className="text-terminalRed body-link">SANS Holiday Hack Challenge 2024</Link>, 
+          which was a great opportunity to test my skill, and to grab a new hoodie from the winners swag shop.
         </p>
       </section>
 
