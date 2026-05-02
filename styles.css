@@ -107,6 +107,11 @@ a:focus-visible {
   text-decoration-color: var(--accent);
 }
 
+.project-list {
+  display: grid;
+  gap: 18px;
+}
+
 .theme-toggle {
   position: fixed;
   top: 16px;
