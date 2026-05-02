@@ -7,7 +7,10 @@
   <meta name="description" content="Portfolio for James Daw" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-theme="dark">
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    Switch to light
+  </button>
   <main>
     <section class="hero">
       <p class="eyebrow">James Daw</p>
@@ -42,5 +45,20 @@
       </p>
     </section>
   </main>
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeKey = 'theme-preference';
+    const applyTheme = (theme) => {
+      document.body.dataset.theme = theme;
+      themeToggle.textContent = theme === 'dark' ? 'Switch to light' : 'Switch to dark';
+    };
+    const savedTheme = localStorage.getItem(themeKey);
+    applyTheme(savedTheme === 'light' ? 'light' : 'dark');
+    themeToggle.addEventListener('click', () => {
+      const nextTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+      applyTheme(nextTheme);
+      localStorage.setItem(themeKey, nextTheme);
+    });
+  </script>
 </body>
 </html>
