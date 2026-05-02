@@ -57,7 +57,7 @@ body[data-theme="sunrise"] {
 main {
   width: min(720px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 64px 0;
+  padding: 88px 0 64px;
 }
 
 section {
@@ -107,6 +107,29 @@ a:focus-visible {
   text-decoration-color: var(--accent);
 }
 
+.site-nav {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  max-width: calc(100% - 180px);
+  font-size: 0.95rem;
+}
+
+.site-nav a,
+.back-link {
+  color: var(--muted);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.back-link:hover,
+.back-link:focus-visible {
+  color: var(--accent-strong);
+}
+
 .project-list {
   display: grid;
   gap: 18px;
@@ -142,4 +165,112 @@ article p,
 section > p,
 .hero p:not(.eyebrow) {
   color: var(--muted);
+}
+
+.project-page {
+  --project-accent: var(--accent-strong);
+}
+
+.project-page .eyebrow,
+.project-page h2 {
+  color: var(--project-accent);
+}
+
+.project-page article {
+  border-color: color-mix(in srgb, var(--project-accent), transparent 70%);
+}
+
+.project-hero {
+  padding-top: 32px;
+}
+
+.detail-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.project-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.project-nav a {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.project-nav a:hover,
+.project-nav a:focus-visible,
+.project-nav a[aria-current="page"] {
+  border-color: var(--project-accent);
+  color: var(--project-accent);
+}
+
+.security-page {
+  --project-accent: #9be7d8;
+}
+
+.security-page[data-theme="sunrise"] {
+  --project-accent: #17796d;
+}
+
+.beacons-page {
+  --project-accent: #ffe08a;
+}
+
+.beacons-page[data-theme="sunrise"] {
+  --project-accent: #946400;
+}
+
+.jsm-page {
+  --project-accent: #b9e994;
+}
+
+.jsm-page[data-theme="sunrise"] {
+  --project-accent: #3f7526;
+}
+
+.art-page {
+  --project-accent: #ffadc7;
+}
+
+.art-page[data-theme="sunrise"] {
+  --project-accent: #a33961;
+}
+
+.music-page {
+  --project-accent: #aebcff;
+}
+
+.music-page[data-theme="sunrise"] {
+  --project-accent: #4758a7;
+}
+
+@media (min-width: 680px) {
+  .detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  main {
+    padding-top: 120px;
+  }
+
+  .site-nav {
+    max-width: calc(100% - 32px);
+  }
+
+  .theme-toggle {
+    top: 56px;
+    left: 16px;
+    right: auto;
+  }
 }

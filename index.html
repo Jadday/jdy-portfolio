@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-theme="sunset">
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
     Switch to sunrise
   </button>
@@ -20,42 +25,42 @@
       </p>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2>Projects</h2>
       <div class="project-list">
         <article>
           <h3>Security</h3>
           <p>My cybersecurity projects and achievements so far.</p>
-          <a href="#">View project</a>
+          <a href="projects/security.html">View project</a>
         </article>
 
         <article>
           <h3>Beacons</h3>
           <p>An open-world fighting game about light. This site has a wiki, leaderboards, videos and more.</p>
-          <a href="#">View project</a>
+          <a href="projects/beacons.html">View project</a>
         </article>
 
         <article>
           <h3>JSM</h3>
           <p>Jadday System Manual. My guides and advice for success and productivity.</p>
-          <a href="#">View project</a>
+          <a href="projects/jsm.html">View project</a>
         </article>
 
         <article>
           <h3>Art</h3>
           <p>Finished art, animations and tutorials.</p>
-          <a href="#">View project</a>
+          <a href="projects/art.html">View project</a>
         </article>
 
         <article>
           <h3>Music</h3>
           <p>Finished songs, experimental beats and track breakdowns.</p>
-          <a href="#">View project</a>
+          <a href="projects/music.html">View project</a>
         </article>
       </div>
     </section>
 
-    <section>
+    <section id="contact">
       <h2>About</h2>
       <p>
         I love creating, and my goal is to make systems and projects that others
@@ -71,21 +76,6 @@
       </p>
     </section>
   </main>
-  <script>
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeKey = 'theme-preference';
-    const applyTheme = (theme) => {
-      document.body.dataset.theme = theme;
-      themeToggle.textContent = theme === 'sunset' ? 'Switch to sunrise' : 'Switch to sunset';
-    };
-    const savedTheme = localStorage.getItem(themeKey);
-    const preferredTheme = savedTheme === 'sunrise' || savedTheme === 'light' ? 'sunrise' : 'sunset';
-    applyTheme(preferredTheme);
-    themeToggle.addEventListener('click', () => {
-      const nextTheme = document.body.dataset.theme === 'sunset' ? 'sunrise' : 'sunset';
-      applyTheme(nextTheme);
-      localStorage.setItem(themeKey, nextTheme);
-    });
-  </script>
+  <script src="theme.js"></script>
 </body>
 </html>
