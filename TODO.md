@@ -2,3 +2,4 @@
 - [ ] slightly different backgrounds per subpage
 - [ ] put a plan on each subpage for the content
 - [ ] make projects a grid rather than a list
+- [ ] add starlight mode with full darkness and white dots
